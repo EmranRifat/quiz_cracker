@@ -1,17 +1,19 @@
 import React from 'react';
 import "./Quiz.css";
 
-const Quiz = ({data}) => {
+const Quiz = ({data,index}) => {
     const {id,options,question,curretAnswer}=data;
+
     // const option=options.
-    console.log(question);
+    // console.log(data);
     return (
         <div  className='box-container'>
-     <h4 className='qsn' >Quiz 1:{question} </h4>
+     <h3 className='qsn' >Quiz: {index+1}: {question} </h3>
     <div className='options'>
     {
        
-       options.map(option=><div  className=''>
+       options.map((option,index)=><div>
+            <div key={index}></div>
           <p className='option'>{option}</p>
       </div>)
      

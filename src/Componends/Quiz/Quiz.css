@@ -27,6 +27,9 @@
     margin-top: -5px;
    
 }
+.option:hover{
+    background: rgba(61, 84, 148, 0.628);
+}
 .box-container{
     width: 50%;
     margin-left: 22%;

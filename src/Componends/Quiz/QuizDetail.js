@@ -6,13 +6,14 @@ const QuizDetail = () => {
   const service=useLoaderData();
   const allData=service.data.questions;
 
-  // console.log(allData);
+  console.log(allData);
 
   return (
     <div>
       <h4>Wellome to quiz page </h4>
       {
-        allData.map(data=><Quiz
+        allData.map((data,index)=><Quiz
+        index={index}
         key={data.id}
         data={data}
         ></Quiz>)
