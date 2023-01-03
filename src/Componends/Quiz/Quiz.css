@@ -1,0 +1,35 @@
+.option-container{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+   
+
+}
+.qsn{
+    display:flex;
+    justify-content: center; 
+    color: rgb(46, 131, 210);
+}
+.options{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    color: rgba(46, 131, 210, 0.985);
+    gap: 10px;
+   
+    
+}
+.option{
+    border: 1px solid rgba(16, 68, 117, 0.55);
+    border-radius: 5px;
+    padding:20px;
+    justify-content: center;
+    display: flex;
+    margin-top: -5px;
+   
+}
+.box-container{
+    width: 50%;
+    margin-left: 22%;
+    margin-top: 100px;
+   
+}

@@ -1,0 +1,23 @@
+.shop-container{
+    display: grid;
+    grid-template-columns:3fr 1fr;
+}
+
+
+.home-container{
+    display: flex;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content:center;
+    align-items: center;
+    margin-top:100px;
+    
+   
+
+}
+.cart-container{
+    background-color: rgba(70, 174, 139, 0.59);
+    text-align: center; 
+   
+}
