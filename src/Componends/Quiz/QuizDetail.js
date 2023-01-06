@@ -6,11 +6,11 @@ const QuizDetail = () => {
   const service=useLoaderData();
   const allData=service.data.questions;
 
-  console.log(allData);
+  // console.log(allData);
 
   return (
     <div>
-      <h4>Wellome to quiz page </h4>
+      <p>Wellome to quiz page ...</p>
       {
         allData.map((data,index)=><Quiz
         index={index}
@@ -24,3 +24,4 @@ const QuizDetail = () => {
 };
 
 export default QuizDetail;
+

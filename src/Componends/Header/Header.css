@@ -16,3 +16,9 @@ nav a:hover{
     background-color: rgb(202, 143, 41);
     text-decoration:underline;
 }
+.left-nav{
+    margin-right: 65%;
+    color: rgba(246, 146, 74, 0.856);
+    text-decoration: none;
+    font-weight: bold;
+}

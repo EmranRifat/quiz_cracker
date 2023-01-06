@@ -14,25 +14,35 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     color: rgba(46, 131, 210, 0.985);
-    gap: 10px;
+    gap: 0px;
    
     
 }
 .option{
-    border: 1px solid rgba(16, 68, 117, 0.55);
+    border: 1px solid rgba(16, 68, 117, 0.176);
     border-radius: 5px;
     padding:20px;
     justify-content: center;
     display: flex;
-    margin-top: -5px;
+    margin: 15px;
+    width:80%;
+    
+    
    
 }
 .option:hover{
     background: rgba(61, 84, 148, 0.628);
+    color: white;
 }
 .box-container{
     width: 50%;
     margin-left: 22%;
     margin-top: 100px;
    
+    box-shadow: 2px 6px 3px rgba(176, 175, 175, 0.36) ;
+
+   
+}
+#checkbox{
+    margin-right:4px;
 }

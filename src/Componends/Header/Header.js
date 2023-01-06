@@ -6,10 +6,11 @@ const Header = () => {
   return (
     <div className="header">
       <nav>
-      <Link to={"/"}>Home</Link>
-      <Link to={"/page"}>Page</Link>
-      <Link to={"/blog"}>Blog</Link>
-      <Link to={"/about"}>About</Link>
+        <Link className="left-nav" href="/">Quiz Cracker</Link>
+        <Link to={"/"}>Home</Link>
+        <Link to={"/page"}>Page</Link>
+        <Link to={"/blog"}>Blog</Link>
+        <Link to={"/about"}>About</Link>
       </nav>
     </div>
   );
