@@ -6,7 +6,7 @@ const QuizDetail = () => {
   const service=useLoaderData();
   const allData=service.data.questions;
 
-  // console.log(allData);
+  // console.log(allData); 
 
   return (
     <div>

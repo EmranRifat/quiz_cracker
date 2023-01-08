@@ -2,13 +2,13 @@ import React,{useState} from 'react';
 import "./Quiz.css"
 
 const Final = ({option, correctAns}) => {
-    const [ans, setAns] = useState("");
+    // const [ans, setAns] = useState("");
 
     // console.log(ans);
 
 
-    const handleGetData = (e) => {
-        setAns(e.target.textContent);
+    const handleGetData = e => {
+        const ans=e.target.textContent;
         
         if(ans===correctAns){
             alert("Your Answer is Correct..!")

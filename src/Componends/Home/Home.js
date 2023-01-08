@@ -7,7 +7,10 @@ const Home = () => {
   const products = useLoaderData();
   const items=products.data;
   // console.log(items);
+
   return (
+
+   
     <div className="shop-container">
       <h4>home page: {products.data.length}</h4>
     
