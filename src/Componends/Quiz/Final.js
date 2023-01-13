@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 import "./Quiz.css"
 
 const Final = ({option, correctAns}) => {
@@ -12,17 +12,16 @@ const Final = ({option, correctAns}) => {
         
         if(ans===correctAns){
             alert("Your Answer is Correct..!")
-        }
+        } 
         else{
             alert('Wrong Answer')
         }
     }
 
     return (
-        <div>
+         <div>
        <button  className='option' onClick={handleGetData}>{option}</button>
-
-       </div>
+        </div>
     );
 };
 

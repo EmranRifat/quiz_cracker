@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './Layout/Main';
@@ -7,6 +6,9 @@ import Blog from './Componends/Blog/Blog';
 import Home from './Componends/Home/Home';
 import Page from './Componends/Page/Page';
 import QuizDetail from './Componends/Quiz/QuizDetail';
+import Login from './Componends/Login/login/Login';
+import Signup from './Componends/Login/SignUp/Signup';
+import PrivateRoute from './Route/PrivateRoute';
 
 
 function App() {
@@ -19,7 +21,11 @@ function App() {
           loader:()=>{
             return fetch('https://openapi.programming-hero.com/api/quiz')
           },
-          element:<Home></Home>
+          element:
+          <PrivateRoute>
+          <Home></Home>
+          </PrivateRoute>
+
         },
         {
           path:"/page",element:<Page></Page>
@@ -29,6 +35,12 @@ function App() {
           loader:({params})=>fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`),
           
           element:<QuizDetail></QuizDetail>
+        },
+        {
+          path:"/Login",element:<Login></Login>
+        },
+        {
+          path:"/signup",element:<Signup></Signup>
         },
     
       ]
@@ -41,6 +53,7 @@ function App() {
     {
       path:"/blog",element:<Blog></Blog>
     },
+    
    
   ])
   return (

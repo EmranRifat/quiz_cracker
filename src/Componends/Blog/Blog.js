@@ -1,9 +1,11 @@
-import React from 'react';
-
+import React, { useContext } from 'react';
+import { authContext } from '../../Contexts/UserContext';
+import"./Blog.css";
 const Blog = () => {
+    const {user}=useContext(authContext);
     return (
-        <div className='text-center'>
-            <h2>Blogs are here</h2>
+        <div className='blog-container'>
+            <h2>Loging user : {user.email} </h2>
         </div>
     );
 };

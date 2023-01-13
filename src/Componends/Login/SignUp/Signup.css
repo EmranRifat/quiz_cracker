@@ -1,0 +1,17 @@
+.error-text{
+    color: rgba(229, 40, 40, 0.96);
+}
+.google{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 40px;
+    background-color: rgba(41, 121, 196, 0.623);
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 20px;
+    cursor: pointer;
+    color: hwb(150 98% 2%);
+}
